@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.PuzzleActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/puzzle1"
+        android:id="@+id/puzzle_image"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/puzzle_heading"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_alignStart="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/puzzle_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Math Bafflers, Book: Logic Puzzles That Use Real-World Math"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $17.99 only"
+        android:layout_marginBottom="79dp"
+        android:layout_alignBottom="@+id/puzzle_image"
+        android:layout_toRightOf="@+id/add_puzzle"
+        android:layout_toEndOf="@+id/add_puzzle" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/puzzle_image"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_alignEnd="@+id/puzzle_image"
+            android:layout_alignRight="@+id/puzzle_image"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:textSize="12dp"
+            android:padding="10dp"
+            android:text="Math Bafflers requires students to use creativity, critical thinking, and logical reasoning to perform a variety of operations and skills that align with state and national math standards. The book covers real-life situations requiring math skills, such as distance, liquid measures, money, time, weight, sequencing, comparison, age, area, and percentages, along with operations such as fractions, exponents, algebra, place value, and number lines. Students will make hypotheses, organize information, draw conclusions, and use syllogistic thinking. Teachers can feel confident that they are providing challenges and reinforcing important skills in a format that students enjoy!
+
+Math Bafflers builds essential critical thinking, analysis, and problem-solving skills; develops logical thinking in a fun format; uses relevant, real-life mathematical situations; and provides opportunities for differentiation. "/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_puzzle"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>

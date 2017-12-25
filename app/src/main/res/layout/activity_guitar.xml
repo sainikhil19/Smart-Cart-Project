@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.GuitarActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/guitar"
+        android:id="@+id/guitar_image"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/guitar_heading"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_alignStart="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/guitar_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Black 41 inch Acoustic Guitar Double Straps Padded Guitar Soft Case Cover Bag Backpack"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $19.98 only"
+        android:layout_marginBottom="79dp"
+        android:layout_alignBottom="@+id/guitar_image"
+        android:layout_toRightOf="@+id/add_guitar"
+        android:layout_toEndOf="@+id/add_guitar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/guitar_image"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_alignEnd="@+id/guitar_image"
+            android:layout_alignRight="@+id/guitar_image"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:text="Fit 40 inch 41 inch Acoustic guitar ect;
+
+        Color: Black
+
+        Double straps design
+
+        Thick Padded Protection
+
+        Popular Guitar Bag,high quality meterial,protect your guitar ,perfect design "/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_guitar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>

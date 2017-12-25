@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.CapActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/graduatecap"
+        android:id="@+id/cap_image"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/cap_title"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_alignStart="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/cap_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Graduation Cap, CrystalMX Unisex Matte Adult Hat Classic Graduation Cap with Loop Tassel 2017"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $7.99 only"
+        android:layout_marginBottom="79dp"
+        android:layout_alignBottom="@+id/cap_image"
+        android:layout_toRightOf="@+id/add_cap"
+        android:layout_toEndOf="@+id/add_cap" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/cap_image"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_alignEnd="@+id/cap_image"
+            android:layout_alignRight="@+id/cap_image"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:textSize="12dp"
+            android:padding="10dp"
+            android:text="45% olyvinyl chloride/ 15% Acrylic
+
+Imported
+
+Not machine washable
+
+COMFORTABLE WEARING EFFECT: The durable board is nearly 9 foot square, and with comfortable comfortable black cloth, make you to feel more comfortable. At your graduation ceremony, let you more out of the ordinary.
+
+UNIQUE TASSEL 2017: This tassel designs HANG LOOP, especial unparalleled 2017 symbol, shows different design concept and unique structure. Generous fashion,classic and elegant, suitable for graduation ceremony.
+
+THE ADJUSTABLE SIZE: The CIRCUMFERENCE of the brim is 9 feet, you just relax or tight it that can be adjusted to adapt to accommodate various sizes, wearing operation simply and not easy slide.
+
+HIGHT QUALITY: Cap's lined are used VINYL PLATE, it is very tough and not easy to break. Use the good material, excellent technology, regarded as really durable quality.
+
+WE GUARANTEE: If you receive a cap that may be damaged or other reasons, according to your request, we will arrange a full refund or resend a new cap to you, to maximize enhance our services, so that customers can rest assured purchase. 3 months warranty will be provided by CrystalMX."/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_cap"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>

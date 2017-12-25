@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.StationaryActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:src="@drawable/stationary"
+        android:id="@+id/stationary_image"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/stationary_heading"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_alignStart="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/stationary_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="MobileVision Bamboo Desktop All-In-One Organizer for File Folders, Notepads, Pens, Stationary Items, Small Electronics and more"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $32.95 only"
+        android:layout_marginBottom="79dp"
+        android:layout_alignBottom="@+id/stationary_image"
+        android:layout_toRightOf="@+id/add_stationary"
+        android:layout_toEndOf="@+id/add_stationary" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/stationary_image"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_alignEnd="@+id/stationary_image"
+            android:layout_alignRight="@+id/stationary_image"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:text="The MobileVision Bamboo Desktop All-In-One is the perfect accessory and work space organizer with storage compartments for all your stationary items. Keep everything from mobile devices, tablets, file folders, mailing envelopes, pens, pencils, paper clips and more neat and sorted.
+
+Beautiful high-quality and sturdy wooden dividers tall enough to keep tablets, documents or other supplies, upright and at your fingertips. Separate compartments for storing commonly used office supplies. (Dimensions: 12.75 x 7 x 5.25 ) Please refer to image for individual compartment dimensions.
+
+        Rear side cut-out allows for cord organization and storage of electronic devices that need a charge. Rubber feet keep organizer sturdy, stable, and in place.
+
+        Multi-function organizer has multiple uses and is perfect for home, craft and hobby items, offices, desktops, kitchen counter tops, and bathroom storage for beauty and hygiene products.
+
+        A trusted MobileVision branded product. Friendly and responsive Customer Service team that aims at creating a positive shopping experiences for you. For any questions or concerns, please contact us by phone or email anytime. (Contact details located in product description) "/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_stationary"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>

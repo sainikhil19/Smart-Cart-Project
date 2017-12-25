@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.NovelActivity3">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/novel3"
+        android:id="@+id/novel_image3"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/novel_heading3"
+        android:layout_toLeftOf="@+id/price"
+        android:layout_toStartOf="@+id/price"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:id="@+id/novel_heading3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="The Life we Bury"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $8.77 only"
+        android:layout_marginTop="89dp"
+        android:layout_alignTop="@+id/novel_image3"
+        android:layout_toRightOf="@+id/add_fidget_novel3"
+        android:layout_toEndOf="@+id/add_fidget_novel3" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView5"
+        android:layout_below="@+id/novel_image3"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_alignEnd="@+id/novel_image3"
+            android:layout_alignRight="@+id/novel_image3"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:text="College student Joe Talbert has the modest goal of completing a writing assignment for an English class. His task is to interview a stranger and write a brief biography of the person. With deadlines looming, Joe heads to a nearby nursing home to find a willing subject. There he meets Carl Iverson, and soon nothing in Joe's life is ever the same.
+
+Carl is a dying Vietnam veteran--and a convicted murderer. With only a few months to live, he has been medically paroled to a nursing home, after spending thirty years in prison for the crimes of rape and murder.
+
+As Joe writes about Carl's life, especially Carl's valor in Vietnam, he cannot reconcile the heroism of the soldier with the despicable acts of the convict. Joe, along with his skeptical female neighbor, throws himself into uncovering the truth, but he is hamstrung in his efforts by having to deal with his dangerously dysfunctional mother, the guilt of leaving his autistic brother vulnerable, and a haunting childhood memory.
+
+Thread by thread, Joe unravels the tapestry of Carl’s conviction. But as he and Lila dig deeper into the circumstances of the crime, the stakes grow higher. Will Joe discover the truth before it’s too late to escape the fallout?"/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_fidget_novel3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>

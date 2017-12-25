@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.NovelActivity2">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/novel2"
+        android:id="@+id/novel_image2"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/novel_heading2"
+        android:layout_toLeftOf="@+id/price"
+        android:layout_toStartOf="@+id/price"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:id="@+id/novel_heading2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="The Boy on the Wooden Box: How the Impossible Became Possible . . . on Schindler's List"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $8.99 only"
+        android:layout_marginTop="89dp"
+        android:layout_alignTop="@+id/novel_image2"
+        android:layout_toRightOf="@+id/add_fidget_novel2"
+        android:layout_toEndOf="@+id/add_fidget_novel2" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView4"
+        android:layout_below="@+id/novel_image2"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_alignEnd="@+id/novel_image2"
+            android:layout_alignRight="@+id/novel_image2"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:textSize="12dp"
+            android:padding="10dp"
+            android:text="Much like The Boy In the Striped Pajamas or The Book Thief, this remarkable memoir from Leon Leyson, one of the youngest children to survive the Holocaust on Oskar Schindler’s list, “brings to readers a story of bravery and the fight for a chance to live” (VOYA).
+
+This, the only memoir published by a former Schindler’s list child, perfectly captures the innocence of a small boy who goes through the unthinkable. Leon Leyson (born Leib Lezjon) was only ten years old when the Nazis invaded Poland and his family was forced to relocate to the Krakow ghetto. With incredible luck, perseverance, and grit, Leyson was able to survive the sadism of the Nazis, including that of the demonic Amon Goeth, commandant of Plaszow, the concentration camp outside Krakow.
+
+Ultimately, it was the generosity and cunning of one man, Oskar Schindler, who saved Leon Leyson’s life, and the lives of his mother, his father, and two of his four siblings, by adding their names to his list of workers in his factory—a list that became world renowned: Schindler’s list.
+
+Told with an abundance of dignity and a remarkable lack of rancor and venom, The Boy on the Wooden Box is a legacy of hope, a memoir unlike anything you’ve ever read."/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_fidget_novel2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>

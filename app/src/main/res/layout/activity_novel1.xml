@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.NovelActivity1">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/novel1"
+        android:id="@+id/novel_image1"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/novel_heading1"
+        android:layout_toLeftOf="@+id/price"
+        android:layout_toStartOf="@+id/price"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:id="@+id/novel_heading1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Beneath a Scarlet Sky: A Novel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $8.47 only"
+        android:layout_marginTop="89dp"
+        android:layout_alignTop="@+id/novel_image1"
+        android:layout_toRightOf="@+id/add_fidget_novel1"
+        android:layout_toEndOf="@+id/add_fidget_novel1" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView3"
+        android:layout_below="@+id/novel_image1"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_alignEnd="@+id/novel_image1"
+            android:layout_alignRight="@+id/novel_image1"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:textSize="12dp"
+            android:padding="10dp"
+            android:text="Pino Lella wants nothing to do with the war or the Nazis. He’s a normal Italian teenager—obsessed with music, food, and girls—but his days of innocence are numbered. When his family home in Milan is destroyed by Allied bombs, Pino joins an underground railroad helping Jews escape over the Alps, and falls for Anna, a beautiful widow six years his senior.
+
+In an attempt to protect him, Pino’s parents force him to enlist as a German soldier—a move they think will keep him out of combat. But after Pino is injured, he is recruited at the tender age of eighteen to become the personal driver for Adolf Hitler’s left hand in Italy, General Hans Leyers, one of the Third Reich’s most mysterious and powerful commanders.
+
+Now, with the opportunity to spy for the Allies inside the German High Command, Pino endures the horrors of the war and the Nazi occupation by fighting in secret, his courage bolstered by his love for Anna and for the life he dreams they will one day share.
+
+Fans of All the Light We Cannot See, The Nightingale, and Unbroken will enjoy this riveting saga of history, suspense, and love."/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_fidget_novel1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>

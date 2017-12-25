@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.ShirtActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/shirt"
+        android:id="@+id/shirt_image"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/shirt_title"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_alignStart="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/shirt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Manwan Walk Men's Slim Fit Business Casual Cotton Long Sleeves Solid Button Down Dress Shirts"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $17.95 only"
+        android:layout_marginBottom="79dp"
+        android:layout_alignBottom="@+id/shirt_image"
+        android:layout_toRightOf="@+id/add_shirt"
+        android:layout_toEndOf="@+id/add_shirt" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/shirt_image"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_alignEnd="@+id/shirt_image"
+            android:layout_alignRight="@+id/shirt_image"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:textSize="12dp"
+            android:padding="10dp"
+            android:text="60% cotton
+Imported
+FABRIC:40% Polyester.Made of high quality fabric, material very soft and comfortable
+GARMENT CARE:Hand wash cold. Do not bleach. Tumble dry low. Iron low if needed. Please wash it with similar colors.
+FEATURES: Classic design; Button closure; Long sleeves; Lightweight cotton fabric;Solid color;Soft and breathable;Good quality fabric.Color may be little different due to monitor,hope you can understand
+OCCASION: Provides the finest and most stylish shirts which can be worn in all occasions.This elegant dress shirt is perfect for Party, Business, Work, Casual, all seasons and occasions
+SIZE:Please choose your size according to our size chart images (Not the Amazon Size Chart),unconditional satisfaction guarantee: if you are not completely satisfied with your buttoned down shirt at any time, please contract us.Money-back satisfaction guarantee "/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_shirt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>

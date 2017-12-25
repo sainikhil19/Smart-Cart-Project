@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.PenActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/penset"
+        android:id="@+id/pen_image"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/pen_heading"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_alignStart="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/pen_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Everyday Essentials Gel Pens - Set of 40 Individual Colors with Barrel Case - Keep Your Pens Neat (40-Color)"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $19.98 only"
+        android:layout_marginBottom="79dp"
+        android:layout_alignBottom="@+id/pen_image"
+        android:layout_toRightOf="@+id/add_pen"
+        android:layout_toEndOf="@+id/add_pen" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/pen_image"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_alignEnd="@+id/pen_image"
+            android:layout_alignRight="@+id/pen_image"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:text="Set of 40 vibrant colors, including metallic, neon, glitter, pastel and standard classics. Colors includes White, Black, Silver, Gold, Purple, Yellow, Orange, Red, Blue, Green, Pink, Teal, Magenta, Cyan, etc.
+
+Fine Tip Colored Ballpoint (0.8 - 1.0 mm tips) is ideal for embellishing craft projects with a variety of bright colors.
+
+Great pens to sketch, draw, color, doodle, write and get creative in a fun and skilled way. Greeting cards, Party invites, Letters to friends and family, arts and crafts, decoration, day care activity, scrap booking, the uses are endless.
+
+Free-flowing ink provides smooth, crisp application. All our gel pens are acid free and come with a barrel case for convenient storage.
+
+All genuine Everyday Essentials Products are covered by a 100% Satisfaction Guarantee and 2-year warranty. Customer satisfaction is our highest priority "/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_pen"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>

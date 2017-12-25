@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.LoginPage">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welcome"
+        android:id="@+id/imageView"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#331a3d"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:hint="Email id"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColorHint="#331a3d"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/special_button"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Login"
+        />
+
+    <TextView
+        android:id="@+id/TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:text="If not registered click on register"
+        android:textColor="#786f6f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/special_button"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Register" />
+
+
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="10dp"
+    tools:context="com.example.sainikhil.smartcartproject.SignUp">
+    <TextView
+        android:id="@+id/Head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Shopping Store"
+        android:textAlignment="center"
+        android:textColor="#9b21fd"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"/>
+
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"/>
+
+
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:gravity="center"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/special_button"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Back to Login Page" />
+
+</LinearLayout>

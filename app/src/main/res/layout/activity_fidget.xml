@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.sainikhil.smartcartproject.FidgetActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/fidgetspinner"
+        android:id="@+id/fidget_image"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/fidget_heading"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_alignStart="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/fidget_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Maxboost Tri-Spinner Fidget Spinner Focus Toy Stress Reducer for Kid and Adult"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Price : $7.99 only"
+        android:layout_marginBottom="79dp"
+        android:layout_alignBottom="@+id/fidget_image"
+        android:layout_toRightOf="@+id/add_fidget"
+        android:layout_toEndOf="@+id/add_fidget" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/fidget_image"
+        android:background="@drawable/special_outline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_alignEnd="@+id/fidget_image"
+            android:layout_alignRight="@+id/fidget_image"
+            android:layout_below="@+id/price"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:text="#GREAT HAND SPINNER - Flick and spin for hours with just one or both hands Great For Fidgety Hands, Anxiety, Phone Stress, Autism, Quitting Bad Habits, Etc...Helps Relieve Stress and quit your bad habits and help keep you awake. Choose to spin in your hand or on the table!
+
+#Featuring premium bearings that allow for an ultra smooth spin. Simply flick and spin for hours!
+
+#Fits right in your palm, allowing you to easily carry it wherever you go. [Notes: Product Size: 2.87 x 2.87 (inches L x W) "/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_fidget"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/special_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>
